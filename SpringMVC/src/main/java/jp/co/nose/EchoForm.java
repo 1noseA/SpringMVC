@@ -2,7 +2,7 @@ package jp.co.nose;
 
 import java.io.Serializable;
 
-public class EcoForm implements Serializable {
+public class EchoForm implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
