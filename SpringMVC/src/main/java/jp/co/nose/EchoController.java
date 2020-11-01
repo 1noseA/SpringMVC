@@ -22,4 +22,13 @@ public class EchoController {
 	public String echo(EchoForm form) {
 		return "echo/output";
 	}
+
+	// 入力チェック
+//	@RequestMapping(method = RequestMethod.POST)
+//	public String echo(@Valid EchoForm form, BindingResult result) {
+//		if(result.hasErrors()) {
+//			return "echo/input";
+//		}
+//		return "echo/output";
+//	}
 }
