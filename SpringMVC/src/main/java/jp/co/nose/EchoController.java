@@ -9,10 +9,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("echo")
 public class EchoController {
 
+	// 入力画面表示
 	@RequestMapping(method = RequestMethod.GET)
 	public String viewInput(Model model) {
 		EchoForm form = new EchoForm();
 		model.addAttribute(form);
 		return "echo/input";
+	}
+
+	// 出力画面表示
+	@RequestMapping(method = RequestMethod.POST)
+	public String echo(EchoForm form) {
+		return "echo/output";
 	}
 }
